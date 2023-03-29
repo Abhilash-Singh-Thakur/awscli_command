@@ -1,0 +1,11 @@
+To configure the aws cli - 
+
+-aws configure
+
+create the s3 bucket by aws cli -
+
+For those of you looking to create a bucket via the CLI, run this:
+
+-aws s3api create-bucket --bucket <my-bucket-name> --region us-west-2 -
+
+
