@@ -6,6 +6,8 @@ create the s3 bucket by aws cli -
 
 For those of you looking to create a bucket via the CLI, run this:
 
+-aws s3 mb s3://<bucketname>
+  or
 -aws s3api create-bucket --bucket <my-bucket-name> --region us-west-2 -
 
 
@@ -61,6 +63,9 @@ restore-object                           | select-object-content
 upload-part                              | upload-part-copy                        
 write-get-object-response                | wait          
 
--for delete the bucket by aws cli
 
-aws s3api delete-bucket --bucket my-new-lambdaaa --region us-east-1
+for delete the bucket by aws cli
+
+1. aws s3api delete-bucket --bucket my-new-lambdaaa --region us-east-1
+   or
+2. aws s3 rb s3://<bucketname>
